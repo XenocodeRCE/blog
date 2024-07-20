@@ -1,0 +1,31 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import error from "../components/blog/error.astro";
+import info from "../components/blog/info.astro";
+import success from "../components/blog/success.astro";
+import warn from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import LinkCard from "../components/page/LinkCard.astro";
+
+<BaseLayout PageID="friend">
+  <BaseCard title="Friend">
+# Friend
+
+---
+
+    <div class="grid grid-cols-2 gap-4">
+      <LinkCard
+        title="EveSunMaple"
+        desc="一位普通的高中学生"
+        url="https://www.saroprock.com"
+        img="https://www.saroprock.com/profile.webp"
+      />
+      <LinkCard
+        title="EveSunMaple"
+        desc="Author of Frosti Theme Template"
+        url="https://www.saroprock.com"
+        img="https://www.saroprock.com/profile.webp"
+      />
+    </div>
+  </BaseCard>
+</BaseLayout>
